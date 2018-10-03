@@ -56,6 +56,10 @@ for a in cha:
 			lx.eval("select.subitem %s set mesh " %a)
 			lx.eval("select.subitem %s add mesh " %b)
 			lx.eval("constraintTransform add pos false")
+			lx.eval("select.subitem %s set mesh " %a)
+			lx.eval("select.subitem %s add mesh " %b)
+			lx.eval("constraintTransform add rot false")
+
 
 for item in vcha:
 	lx.eval("layer.setVisibility %s true" %item)
